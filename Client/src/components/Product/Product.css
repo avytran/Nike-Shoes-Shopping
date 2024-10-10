@@ -1,0 +1,100 @@
+.shoe-elements{
+    height: calc(100% - 98px);
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .shoe-name {
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  
+  .shoe-desc {
+    color: rgb(149, 145, 145);
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+  
+  .shoe-img-container {
+    margin: 12px 0;
+    position: relative;
+    border-radius: 30px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .shoe-img-container img {
+    display: block;
+    width: 100%;
+    filter: drop-shadow(0 30px 20px rgba(0, 0, 0, .2));
+    transform: rotate(-24deg);
+    margin-left: -16px;
+  }
+  
+  .shoe-bottom{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0px 50px 0px;
+  }
+  
+  .shoe-price{
+    font-size: larger;
+      font-weight: bolder;
+      color: white;
+  }
+  
+  .shoe-added{
+    display: block;
+    width: 50px;
+  }
+  
+  .shoe-add-btn {
+    cursor: pointer;
+    background-color: #B17CE7;
+    font-weight: 700;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: auto;
+    height: 46px;
+    min-width: 46px;
+    padding: 16px 20px;
+    border-radius: 100px;
+    transition: all .25s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .shoe-add-btn:hover{
+    background-color: #8b5db9;
+      box-shadow: -2px 2px 4px rgba(0,0,0,.15);
+  }
+  
+  
+
+  .shoe-added{
+    cursor: pointer;
+    background-color: #B17CE7;
+    font-weight: 700;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: auto;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 100px;
+    transition: all .25s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .shoe-added img{
+    height: 20px;
+  }

@@ -1,0 +1,83 @@
+body {
+  background-color: #151E33;
+  font-family: Rubik-VariableFont_wght;
+}      
+
+.wave-animation{
+  background-color: #B17CE7;
+  height: 100%;
+  width: 300%;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  border-radius: 100%;
+  animation: waveAnimation 8s ease-in-out infinite alternate;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(-50%) skewY(-8deg);
+  }
+  100% {
+    transform: translateX(-50%) skewY(8deg);
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #151E33;
+  box-sizing: border-box;
+  width: 360px;
+  height: 600px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, .01), 0 7px 5px rgba(0, 0, 0, .028), 0 12px 10px rgba(0, 0, 0, .035), 0 19px 18px rgba(0, 0, 0, .042), 0 34px 33px rgba(0, 0, 0, .05), 0 81px 81px rgba(0, 0, 0, .07);
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 0 28px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-corner{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #B17CE7;
+  top: -20%;
+  left: -35%;
+  z-index: 0;
+}
+
+.logo-container{
+  margin: 20px 0px;
+  position: relative;
+}
+
+.logo-nike{
+  display: block;
+  width: 50px;
+}
+
+.card-header{
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 16px 0;
+  position: relative;
+}
+
