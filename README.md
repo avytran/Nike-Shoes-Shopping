@@ -1,6 +1,8 @@
 # Online Shoe Store 
 Online Shoe Store is an e-commerce website that allows users to easily shop for shoes.
 
+![image](https://github.com/user-attachments/assets/ba8d7dd1-0041-43f6-865d-32dbcf315218)
+
 ## Installation  
 To run this application on your machine, follow these steps: 
 1. **Clone the Repository**:  git clone https://github.com/username/online-shoe-store.git
