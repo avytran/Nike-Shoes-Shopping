@@ -2,25 +2,29 @@ const express = require('express');
 const { Connection, Request, TYPES } = require('tedious');  
 const cors = require('cors');  
 const port = 5000;  
+require('dotenv').config(); 
+
 
 const app = express();
 app.use(express.json());  
 app.use(cors());    
 
+console.log(process.env.DB_HOST);
+
 //Database information
 const config = {  
-    server: 'MSI\\MSSQLSERVER2022',  
+    server: process.env.DB_HOST,  
     authentication: {  
         type: 'default',  
         options: {  
-            userName: 'avy',  
-            password: '12345678'  
+            userName: process.env.DB_USER,  
+            password: process.env.DB_USER  
         }  
     },  
     options: {  
         encrypt: false,  
         trustServerCertificate: true,  
-        database: 'Nike_Shoes_DB'  
+        database: process.env.DB_NAME  
     }  
 };
 

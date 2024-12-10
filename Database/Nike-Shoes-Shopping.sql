@@ -60,7 +60,4 @@ CREATE TABLE OrderDetail (
     Price DECIMAL(10, 2)  
 ); 
 
-SELECT * FROM Customers;
-SELECT * FROM Orders;
-SELECT * FROM OrderDetail;
 
